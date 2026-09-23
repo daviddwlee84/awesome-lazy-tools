@@ -10,7 +10,7 @@ Terminal tools that make complex workflows visible, navigable, and actionable: *
 ## Contents
 
 - [Version Control and Workflows](#version-control-and-workflows)
-- [Containers and Task Queues](#containers-and-task-queues)
+- [Infrastructure, Containers and Task Queues](#infrastructure-containers-and-task-queues)
 - [Files, Dotfiles, and System Monitoring](#files-dotfiles-and-system-monitoring)
 - [Data and Logs](#data-and-logs)
 - [Networking and APIs](#networking-and-apis)
@@ -19,7 +19,7 @@ Terminal tools that make complex workflows visible, navigable, and actionable: *
 - [Maintainer Projects](#maintainer-projects)
 - [Related Collections](#related-collections)
 
-Research reviewed on **2026-09-21**. Agentic development is a research dimension, **not an inclusion requirement or quality score**. Status links open the evidence notes. Dates identify events found in a bounded review, not claims about a project's first private use of AI. “Guidance found” describes instructions; “documented use” requires implementation evidence; “automation found” covers AI review or documentation workflows. A missing date means unknown. The research method below explains dates, policies, and limitations.
+Research reviewed on **2026-09-21**; lazyansible was added on **2026-09-23**. Agentic development is a research dimension, **not an inclusion requirement or quality score**. Status links open the evidence notes. Dates identify events found in a bounded review, not claims about a project's first private use of AI. “Guidance found” describes instructions; “documented use” requires implementation evidence; “automation found” covers AI review or documentation workflows. A missing date means unknown. The research method below explains dates, policies, and limitations.
 
 ## Version Control and Workflows
 
@@ -31,13 +31,14 @@ Research reviewed on **2026-09-21**. Agentic development is a research dimension
 | [dev-cli](https://github.com/daviddwlee84/dev-cli)  | Repositories, worktrees, tasks, and runtimes in a shared CLI/dashboard workflow.             | [Documented use](docs/dev-cli/README.md)          | Attributed merge commit: 2026-09-19                            |
 | [exp-cli](https://github.com/daviddwlee84/exp-cli)  | Git-based research workflow with a read-only overview and interactive commands; early stage. | [Documented use](docs/exp-cli/README.md)          | Attributed implementation commit: 2026-08-29                   |
 
-## Containers and Task Queues
+## Infrastructure, Containers and Task Queues
 
-| Tool                                                      | Purpose / lazy traits                                                              | Agentic development                           | Public milestones found                                |
-| --------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------ |
-| [Lazydocker](https://github.com/jesseduffield/lazydocker) | Docker and Compose resources beside logs, metrics, and common actions.             | [Documented use](docs/lazydocker/README.md)   | Guidance committed / implementation merged: 2026-04-19 |
-| [K9s](https://github.com/derailed/k9s)                    | Browse and operate Kubernetes resources with continuously updated cluster context. | [Documented use](docs/k9s/README.md)          | Implementation merged: 2026-01-03                      |
-| [lazypueue](https://github.com/daviddwlee84/lazypueue)    | Pueue queues across hosts, task details, logs, and guided actions; early stage.    | [Documented use](docs/lazypueue/README.md)    | Source / transcript published: 2026-09-21              |
+| Tool                                                       | Purpose / lazy traits                                                                                   | Agentic development                                    | Public milestones found                                |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------ |
+| [lazyansible](https://github.com/daviddwlee84/lazyansible) | Ansible inventory, playbooks, host status, and streamed logs; personal fork in early local development. | [No public evidence found](docs/lazyansible/README.md) | —                                                      |
+| [Lazydocker](https://github.com/jesseduffield/lazydocker)  | Docker and Compose resources beside logs, metrics, and common actions.                                  | [Documented use](docs/lazydocker/README.md)            | Guidance committed / implementation merged: 2026-04-19 |
+| [K9s](https://github.com/derailed/k9s)                     | Browse and operate Kubernetes resources with continuously updated cluster context.                      | [Documented use](docs/k9s/README.md)                   | Implementation merged: 2026-01-03                      |
+| [lazypueue](https://github.com/daviddwlee84/lazypueue)     | Pueue queues across hosts, task details, logs, and guided actions; early stage.                         | [Documented use](docs/lazypueue/README.md)             | Source / transcript published: 2026-09-21              |
 
 ## Files, Dotfiles, and System Monitoring
 
@@ -87,7 +88,7 @@ The [agentic development research method](docs/research-method.md) explains evid
 
 ## Maintainer Projects
 
-This list's maintainer also maintains **dev-cli, exp-cli, lazychezmoi, lazyclash, lazymlflow, and lazypueue**. They follow the same inclusion and evidence rules as other entries. New public source repositories are not automatically stable releases. Their notes describe the inspected version and known limitations.
+This list's maintainer also maintains **dev-cli, exp-cli, lazyansible, lazychezmoi, lazyclash, lazymlflow, and lazypueue**. lazyansible is a permanent personal fork of kocierik/lazyansible. They follow the same inclusion and evidence rules as other entries. New public source repositories are not automatically stable releases. Their notes describe the inspected version and known limitations.
 
 ## Related Collections
 
