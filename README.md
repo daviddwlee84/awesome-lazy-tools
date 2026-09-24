@@ -19,7 +19,7 @@ Terminal tools that make complex workflows visible, navigable, and actionable: *
 - [Maintainer Projects](#maintainer-projects)
 - [Related Collections](#related-collections)
 
-Research reviewed on **2026-09-21**; lazyansible was added on **2026-09-23**, and lazycrontab on **2026-09-24**. Agentic development is a research dimension, **not an inclusion requirement or quality score**. Status links open the evidence notes. Dates identify events found in a bounded review, not claims about a project's first private use of AI. “Guidance found” describes instructions; “documented use” requires implementation evidence; “automation found” covers AI review or documentation workflows. A missing date means unknown. The research method below explains dates, policies, and limitations.
+Research reviewed on **2026-09-21**; lazyansible was added on **2026-09-23**, and lazycrontab and lazyfind on **2026-09-24**. Agentic development is a research dimension, **not an inclusion requirement or quality score**. Status links open the evidence notes. Dates identify events found in a bounded review, not claims about a project's first private use of AI. “Guidance found” describes instructions; “documented use” requires implementation evidence; “automation found” covers AI review or documentation workflows. A missing date means unknown. The research method below explains dates, policies, and limitations.
 
 ## Version Control and Workflows
 
@@ -43,11 +43,12 @@ Research reviewed on **2026-09-21**; lazyansible was added on **2026-09-23**, an
 
 ## Files, Dotfiles, and System Monitoring
 
-| Tool                                                       | Purpose / lazy traits                                                                      | Agentic development                            | Public milestones found                                           |
-| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------- | ----------------------------------------------------------------- |
-| [Yazi](https://github.com/sxyazi/yazi)                     | Asynchronous file navigation, previews, and task progress; upstream labels it public beta. | [Documented use](docs/yazi/README.md)          | Implementation merged: 2025-09-04; guidance committed: 2026-07-25 |
-| [lazychezmoi](https://github.com/daviddwlee84/lazychezmoi) | Inspect dotfile state and diffs before editing or applying selected changes; early stage.  | [Documented use](docs/lazychezmoi/README.md)   | Source / transcript published: 2026-09-21                         |
-| [btop](https://github.com/aristocratos/btop)               | CPU, memory, disks, network, and processes in a persistent monitoring overview.            | [Documented use](docs/btop/README.md)          | Policy committed: 2025-12-04; implementation merged: 2026-05-01   |
+| Tool                                                       | Purpose / lazy traits                                                                       | Agentic development                          | Public milestones found                                           |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------- |
+| [Yazi](https://github.com/sxyazi/yazi)                     | Asynchronous file navigation, previews, and task progress; upstream labels it public beta.  | [Documented use](docs/yazi/README.md)        | Implementation merged: 2025-09-04; guidance committed: 2026-07-25 |
+| [lazychezmoi](https://github.com/daviddwlee84/lazychezmoi) | Inspect dotfile state and diffs before editing or applying selected changes; early stage.   | [Documented use](docs/lazychezmoi/README.md) | Source / transcript published: 2026-09-21                         |
+| [lazyfind](https://github.com/daviddwlee84/lazyfind)       | Search local/SSH roots, refine fd/rg results and act on matches; early source-only version. | [Documented use](docs/lazyfind/README.md)    | Source / transcript published: 2026-09-24                         |
+| [btop](https://github.com/aristocratos/btop)               | CPU, memory, disks, network, and processes in a persistent monitoring overview.             | [Documented use](docs/btop/README.md)        | Policy committed: 2025-12-04; implementation merged: 2026-05-01   |
 
 ## Data and Logs
 
@@ -89,7 +90,7 @@ The [agentic development research method](docs/research-method.md) explains evid
 
 ## Maintainer Projects
 
-This list's maintainer also maintains **dev-cli, exp-cli, lazyansible, lazychezmoi, lazyclash, lazycrontab, lazymlflow, and lazypueue**. lazyansible is a permanent personal fork of kocierik/lazyansible. They follow the same inclusion and evidence rules as other entries. New public source repositories are not automatically stable releases. lazycrontab has an initial source-only tag; no binary distribution or GitHub Release was published. Their notes describe the inspected version and known limitations.
+This list's maintainer also maintains **dev-cli, exp-cli, lazyansible, lazychezmoi, lazyclash, lazycrontab, lazyfind, lazymlflow, and lazypueue**. lazyansible is a permanent personal fork of kocierik/lazyansible. They follow the same inclusion and evidence rules as other entries. New public source repositories are not automatically stable releases. lazycrontab and lazyfind have source-only tags; no binary distribution or GitHub Release accompanied their publication. Their notes describe the inspected version and known limitations.
 
 ## Related Collections
 
