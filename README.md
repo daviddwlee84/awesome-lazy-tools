@@ -19,7 +19,7 @@ Terminal tools that make complex workflows visible, navigable, and actionable: *
 - [Maintainer Projects](#maintainer-projects)
 - [Related Collections](#related-collections)
 
-Research reviewed on **2026-09-21**; lazyansible was added on **2026-09-23**, and lazycrontab's local preview on **2026-09-24**. Agentic development is a research dimension, **not an inclusion requirement or quality score**. Status links open the evidence notes. Dates identify events found in a bounded review, not claims about a project's first private use of AI. “Guidance found” describes instructions; “documented use” requires implementation evidence; “automation found” covers AI review or documentation workflows. A missing date means unknown. The research method below explains dates, policies, and limitations.
+Research reviewed on **2026-09-21**; lazyansible was added on **2026-09-23**, and lazycrontab on **2026-09-24**. Agentic development is a research dimension, **not an inclusion requirement or quality score**. Status links open the evidence notes. Dates identify events found in a bounded review, not claims about a project's first private use of AI. “Guidance found” describes instructions; “documented use” requires implementation evidence; “automation found” covers AI review or documentation workflows. A missing date means unknown. The research method below explains dates, policies, and limitations.
 
 ## Version Control and Workflows
 
@@ -38,7 +38,7 @@ Research reviewed on **2026-09-21**; lazyansible was added on **2026-09-23**, an
 | [lazyansible](https://github.com/daviddwlee84/lazyansible) | Ansible inventory, playbooks, host status, and streamed logs; personal fork in early local development. | [No public evidence found](docs/lazyansible/README.md)         | —                                                      |
 | [Lazydocker](https://github.com/jesseduffield/lazydocker)  | Docker and Compose resources beside logs, metrics, and common actions.                                  | [Documented use](docs/lazydocker/README.md)                    | Guidance committed / implementation merged: 2026-04-19 |
 | [K9s](https://github.com/derailed/k9s)                     | Browse and operate Kubernetes resources with continuously updated cluster context.                      | [Documented use](docs/k9s/README.md)                           | Implementation merged: 2026-01-03                      |
-| [lazycrontab](docs/lazycrontab/README.md)                  | Inspect cron across hosts, build readable schedules, and review edits; unpublished local preview.       | [Not reviewed](docs/lazycrontab/README.md#agentic-development) | —                                                      |
+| [lazycrontab](https://github.com/daviddwlee84/lazycrontab) | Inspect cron across hosts, build readable schedules, and review edits; early source-only version.       | [Not reviewed](docs/lazycrontab/README.md#agentic-development) | —                                                      |
 | [lazypueue](https://github.com/daviddwlee84/lazypueue)     | Pueue queues across hosts, task details, logs, and guided actions; early stage.                         | [Documented use](docs/lazypueue/README.md)                     | Source / transcript published: 2026-09-21              |
 
 ## Files, Dotfiles, and System Monitoring
@@ -89,7 +89,7 @@ The [agentic development research method](docs/research-method.md) explains evid
 
 ## Maintainer Projects
 
-This list's maintainer also maintains **dev-cli, exp-cli, lazyansible, lazychezmoi, lazyclash, lazycrontab, lazymlflow, and lazypueue**. lazyansible is a permanent personal fork of kocierik/lazyansible. They follow the same inclusion and evidence rules as other entries. New public source repositories are not automatically stable releases. lazycrontab is recorded as an unpublished local preview, with no verified public source link. Their notes describe the inspected version and known limitations.
+This list's maintainer also maintains **dev-cli, exp-cli, lazyansible, lazychezmoi, lazyclash, lazycrontab, lazymlflow, and lazypueue**. lazyansible is a permanent personal fork of kocierik/lazyansible. They follow the same inclusion and evidence rules as other entries. New public source repositories are not automatically stable releases. lazycrontab has an initial source-only tag; no binary distribution or GitHub Release was published. Their notes describe the inspected version and known limitations.
 
 ## Related Collections
 
