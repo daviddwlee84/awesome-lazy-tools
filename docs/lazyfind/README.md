@@ -20,6 +20,29 @@ annotated source tags were verified on 2026-09-24. These tags do not provide a
 GitHub Release or prebuilt binaries. The bundled skill license does not declare
 a license for the application. [Installation][readme], [module requirements][module]
 
+## Distribution follow-up — 2026-09-25
+
+The earlier snapshot above describes the source-only publication. Version
+[`v0.1.3`](https://github.com/daviddwlee84/lazyfind/releases/tag/v0.1.3) adds macOS/Linux
+amd64/arm64 binary archives, checksums, shell completions and a filtered source
+archive. The personal Homebrew formula installs those binaries; chezmoi's
+`installPersonalTools` uses that tap on macOS and verified archives on Linux.
+These are CLI installations; backend setup remains explicit.
+[Release source](https://github.com/daviddwlee84/lazyfind/tree/ceadd85d2a24d0958af790744d7f0f7cd6ca8595),
+[distribution contract](https://github.com/daviddwlee84/lazyfind/blob/ceadd85d2a24d0958af790744d7f0f7cd6ca8595/docs/distribution.md)
+
+The executable upgrade entry is `lazyfind upgrade`,
+with read-only `--check` and a verified Homebrew handoff. Standalone binaries use
+their external installation owner, including `just upgrade-personal` for managed
+chezmoi releases. Source builds remain optional; binary installation requires no Go SDK.
+The application is MIT licensed at this revision.
+[Updater](https://github.com/daviddwlee84/lazyfind/blob/ceadd85d2a24d0958af790744d7f0f7cd6ca8595/internal/managedupgrade/managedupgrade.go),
+[license](https://github.com/daviddwlee84/lazyfind/blob/ceadd85d2a24d0958af790744d7f0f7cd6ca8595/LICENSE)
+
+This follow-up inspects release/distribution code and public artifacts at the
+pinned revision. It does not replace or extend the earlier bounded agentic-history
+review, and it makes no Windows release or native-backend acceptance claim.
+
 ## Why it fits
 
 The source implements a search-first workflow: choose local or single-host SSH

@@ -21,6 +21,29 @@ the README, changelog and verification notes relative to implementation snapshot
 `bce52b0bea8cc779a12b12a379083f6eea9e282f`. [Tagged source][snapshot],
 [changelog][changelog]
 
+## Distribution follow-up — 2026-09-25
+
+The earlier snapshot above describes the source-only publication. Version
+[`v0.1.3`](https://github.com/daviddwlee84/lazycrontab/releases/tag/v0.1.3) adds macOS/Linux
+amd64/arm64 binary archives, checksums, shell completions and a filtered source
+archive. The personal Homebrew formula installs those binaries; chezmoi's
+`installPersonalTools` uses that tap on macOS and verified archives on Linux.
+These are CLI installations; backend setup remains explicit.
+[Release source](https://github.com/daviddwlee84/lazycrontab/tree/02885e03cf785bc73352d6847678d8b0e59fe380),
+[distribution contract](https://github.com/daviddwlee84/lazycrontab/blob/02885e03cf785bc73352d6847678d8b0e59fe380/docs/distribution.md)
+
+The executable upgrade entry is `lazycrontab upgrade`,
+with read-only `--check` and a verified Homebrew handoff. Standalone binaries use
+their external installation owner, including `just upgrade-personal` for managed
+chezmoi releases. The existing versioned-source updater remains available. Source builds remain optional; binary installation requires no Go SDK.
+The application is MIT licensed at this revision.
+[Updater](https://github.com/daviddwlee84/lazycrontab/blob/02885e03cf785bc73352d6847678d8b0e59fe380/internal/upgrade/upgrade.go),
+[license](https://github.com/daviddwlee84/lazycrontab/blob/02885e03cf785bc73352d6847678d8b0e59fe380/LICENSE)
+
+This follow-up inspects release/distribution code and public artifacts at the
+pinned revision. It does not replace or extend the earlier bounded agentic-history
+review, and it makes no Windows release or native-backend acceptance claim.
+
 ## Why it fits
 
 The inspected implementation keeps hosts/sources, jobs and selected-job details

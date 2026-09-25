@@ -25,6 +25,29 @@ the checkout, using a fresh temporary module cache and executable directory.
 Both reported `lazypkg version v0.1.2`; help and zsh completion also worked.
 This checked source installation without changing managed packages.
 
+## Distribution follow-up — 2026-09-25
+
+The earlier snapshot above describes the source-only publication. Version
+[`v0.1.4`](https://github.com/daviddwlee84/lazypkg/releases/tag/v0.1.4) adds macOS/Linux
+amd64/arm64 binary archives, checksums, shell completions and a filtered source
+archive. The personal Homebrew formula installs those binaries; chezmoi's
+`installPersonalTools` uses that tap on macOS and verified archives on Linux.
+These are CLI installations; backend setup remains explicit.
+[Release source](https://github.com/daviddwlee84/lazypkg/tree/703d1d0c74fff2b3fe068829a642eae8805fd816),
+[distribution contract](https://github.com/daviddwlee84/lazypkg/blob/703d1d0c74fff2b3fe068829a642eae8805fd816/docs/distribution.md)
+
+The executable upgrade entry is `lazypkg self upgrade`,
+with read-only `--check` and a verified Homebrew handoff. Standalone binaries use
+their external installation owner, including `just upgrade-personal` for managed
+chezmoi releases. Source builds remain optional; binary installation requires no Go SDK.
+The application is MIT licensed at this revision.
+[Updater](https://github.com/daviddwlee84/lazypkg/blob/703d1d0c74fff2b3fe068829a642eae8805fd816/internal/managedupgrade/managedupgrade.go),
+[license](https://github.com/daviddwlee84/lazypkg/blob/703d1d0c74fff2b3fe068829a642eae8805fd816/LICENSE)
+
+This follow-up inspects release/distribution code and public artifacts at the
+pinned revision. It does not replace or extend the earlier bounded agentic-history
+review, and it makes no Windows release or native-backend acceptance claim.
+
 ## Why it fits
 
 Five views connect installed software, package discovery, available updates,
