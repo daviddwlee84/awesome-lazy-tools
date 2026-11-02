@@ -70,6 +70,7 @@ Research reviewed on **2026-09-21**; lazyansible was added on **2026-09-23**, an
 | [lazyclash](https://github.com/daviddwlee84/lazyclash) | Inspect and operate existing Mihomo cores through proxies, traffic, connections, and logs. | [Guidance found](docs/lazyclash/README.md)   | Guidance / agent interface committed: 2026-09-20                              |
 | [Trippy](https://github.com/fujiapple852/trippy)       | Network diagnostics combining traceroute and ping in a live view.                          | [Documented use](docs/trippy/README.md)      | Codex-linked fix merged: 2025-06-04; assisted localization merged: 2026-04-05 |
 | [Posting](https://github.com/darrenburns/posting)      | Keyboard-oriented HTTP requests, collections, and response inspection.                     | [Documented use](docs/posting/README.md)     | Attributed code commit: 2025-09-12; setup / review: 2026-03-25                |
+| [Kilobat CLI](https://github.com/seifip/kilobat-cli)   | Mac network checks from a keyboard menu; source-build and companion limits apply.          | [Documented use](docs/kilobat/README.md)     | Claude co-author trailer on source update: 2026-10-28                         |
 
 ## Editors and Composable Pickers
 
